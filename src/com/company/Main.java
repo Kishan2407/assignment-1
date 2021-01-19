@@ -9,13 +9,13 @@ public class Main {
         System.out.println(f.checkAvailability());
 
         Passenger p = new Passenger("walter","9845655562",
-                 "guru@gmail.com","Anand street", "Chennai","Tamil Nadu");
+                "guru@gmail.com","Anand street", "Chennai","Tamil Nadu");
         System.out.println("Address :"+p.getAddress());
         System.out.println("Contact :"+p.getContact());
         System.out.println("Id :"+p.getId());
         System.out.println(Passenger.getIdCounter());
         System.out.println(Passenger.getPassengerCount());
-        p.setAddress("kik","gagba","ywa" );
+        p.setAddress("kik","gagba","ywa");
         p.setContact("mko","9879874563","hfunfs@gmail.com");
 
         Passenger p1 = new Passenger("harry","8736827645",
@@ -39,7 +39,7 @@ public class Main {
         rt.updateSpecialService(null);
 
         String[] touristLocations = {"Agra","Goa","Goa"};
-        TouristTicket tt = new TouristTicket("13232","Bangalore",
+        TouristTicket tt = new TouristTicket("14325","Bangalore",
                 "Chennai",f,
                 departureTime,arrivalTime,p,113,6000,false,
                 "",touristLocations);

@@ -79,18 +79,15 @@ public class Passenger {
     }
 
     public String getAddress() {
-
         return  address.getAddressDetails();
     }
     public void setAddress(String street, String city, String state ) {
         this.address.updateAddressDetails(street,city,state);
     }
     public static  int getIdCounter() {
-
         return idCounter;
     }
     public static int getPassengerCount() {
-
         return idCounter;
     }
 
