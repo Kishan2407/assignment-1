@@ -1,15 +1,10 @@
-import java.sql.Time;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class TouristTicket extends  Ticket{
 
-    String hotelAddress;
-    String[] touristLocations;
+    private String hotelAddress;
+    private String[] touristLocations;
 
-    TouristTicket(String pnr,
-                  String departureLocation,
+    TouristTicket(String departureLocation,
                   String destinationLocation,
                   Flight flight,
                   String dateTimeOfDeparture,
@@ -20,8 +15,7 @@ public class TouristTicket extends  Ticket{
                   boolean statusCancelled,
                   String hotelAddress,
                   String[] touristLocations) {
-        super(pnr,
-                departureLocation,
+        super(departureLocation,
                 destinationLocation,
                 flight,
                 dateTimeOfDeparture,
@@ -59,5 +53,7 @@ public class TouristTicket extends  Ticket{
             }
         }
     }
-
+    public String[] getTouristLocations() {
+        return touristLocations;
+    }
 }
